@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10547C8D2C44DEA40090D179 /* RecyklooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C8C2C44DEA40090D179 /* RecyklooApp.swift */; };
+		10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C8E2C44DEA40090D179 /* ContentView.swift */; };
+		10547C912C44DEA40090D179 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C902C44DEA40090D179 /* Item.swift */; };
+		10547C932C44DEA50090D179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C922C44DEA50090D179 /* Assets.xcassets */; };
+		10547C962C44DEA50090D179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C952C44DEA50090D179 /* Preview Assets.xcassets */; };
+		10547CA02C44DEA50090D179 /* RecyklooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C9F2C44DEA50090D179 /* RecyklooTests.swift */; };
+		10547CAA2C44DEA50090D179 /* RecyklooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CA92C44DEA50090D179 /* RecyklooUITests.swift */; };
+		10547CAC2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10547C9C2C44DEA50090D179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10547C812C44DEA40090D179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10547C882C44DEA40090D179;
+			remoteInfo = Recykloo;
+		};
+		10547CA62C44DEA50090D179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10547C812C44DEA40090D179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10547C882C44DEA40090D179;
+			remoteInfo = Recykloo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10547C892C44DEA40090D179 /* Recykloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recykloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10547C8C2C44DEA40090D179 /* RecyklooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooApp.swift; sourceTree = "<group>"; };
+		10547C8E2C44DEA40090D179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10547C902C44DEA40090D179 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		10547C922C44DEA50090D179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10547C952C44DEA50090D179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10547C9B2C44DEA50090D179 /* RecyklooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyklooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10547C9F2C44DEA50090D179 /* RecyklooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooTests.swift; sourceTree = "<group>"; };
+		10547CA52C44DEA50090D179 /* RecyklooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyklooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10547CA92C44DEA50090D179 /* RecyklooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITests.swift; sourceTree = "<group>"; };
+		10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10547C862C44DEA40090D179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10547C982C44DEA50090D179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10547CA22C44DEA50090D179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10547C802C44DEA40090D179 = {
+			isa = PBXGroup;
+			children = (
+				10547C8B2C44DEA40090D179 /* Recykloo */,
+				10547C9E2C44DEA50090D179 /* RecyklooTests */,
+				10547CA82C44DEA50090D179 /* RecyklooUITests */,
+				10547C8A2C44DEA40090D179 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10547C8A2C44DEA40090D179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10547C892C44DEA40090D179 /* Recykloo.app */,
+				10547C9B2C44DEA50090D179 /* RecyklooTests.xctest */,
+				10547CA52C44DEA50090D179 /* RecyklooUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10547C8B2C44DEA40090D179 /* Recykloo */ = {
+			isa = PBXGroup;
+			children = (
+				10547C8C2C44DEA40090D179 /* RecyklooApp.swift */,
+				10547C8E2C44DEA40090D179 /* ContentView.swift */,
+				10547C902C44DEA40090D179 /* Item.swift */,
+				10547C922C44DEA50090D179 /* Assets.xcassets */,
+				10547C942C44DEA50090D179 /* Preview Content */,
+			);
+			path = Recykloo;
+			sourceTree = "<group>";
+		};
+		10547C942C44DEA50090D179 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				10547C952C44DEA50090D179 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10547C9E2C44DEA50090D179 /* RecyklooTests */ = {
+			isa = PBXGroup;
+			children = (
+				10547C9F2C44DEA50090D179 /* RecyklooTests.swift */,
+			);
+			path = RecyklooTests;
+			sourceTree = "<group>";
+		};
+		10547CA82C44DEA50090D179 /* RecyklooUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10547CA92C44DEA50090D179 /* RecyklooUITests.swift */,
+				10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */,
+			);
+			path = RecyklooUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10547C882C44DEA40090D179 /* Recykloo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10547CAF2C44DEA50090D179 /* Build configuration list for PBXNativeTarget "Recykloo" */;
+			buildPhases = (
+				10547C852C44DEA40090D179 /* Sources */,
+				10547C862C44DEA40090D179 /* Frameworks */,
+				10547C872C44DEA40090D179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Recykloo;
+			productName = Recykloo;
+			productReference = 10547C892C44DEA40090D179 /* Recykloo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10547C9A2C44DEA50090D179 /* RecyklooTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10547CB22C44DEA50090D179 /* Build configuration list for PBXNativeTarget "RecyklooTests" */;
+			buildPhases = (
+				10547C972C44DEA50090D179 /* Sources */,
+				10547C982C44DEA50090D179 /* Frameworks */,
+				10547C992C44DEA50090D179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10547C9D2C44DEA50090D179 /* PBXTargetDependency */,
+			);
+			name = RecyklooTests;
+			productName = RecyklooTests;
+			productReference = 10547C9B2C44DEA50090D179 /* RecyklooTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10547CA42C44DEA50090D179 /* RecyklooUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10547CB52C44DEA50090D179 /* Build configuration list for PBXNativeTarget "RecyklooUITests" */;
+			buildPhases = (
+				10547CA12C44DEA50090D179 /* Sources */,
+				10547CA22C44DEA50090D179 /* Frameworks */,
+				10547CA32C44DEA50090D179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10547CA72C44DEA50090D179 /* PBXTargetDependency */,
+			);
+			name = RecyklooUITests;
+			productName = RecyklooUITests;
+			productReference = 10547CA52C44DEA50090D179 /* RecyklooUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10547C812C44DEA40090D179 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					10547C882C44DEA40090D179 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					10547C9A2C44DEA50090D179 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 10547C882C44DEA40090D179;
+					};
+					10547CA42C44DEA50090D179 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 10547C882C44DEA40090D179;
+					};
+				};
+			};
+			buildConfigurationList = 10547C842C44DEA40090D179 /* Build configuration list for PBXProject "Recykloo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10547C802C44DEA40090D179;
+			productRefGroup = 10547C8A2C44DEA40090D179 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10547C882C44DEA40090D179 /* Recykloo */,
+				10547C9A2C44DEA50090D179 /* RecyklooTests */,
+				10547CA42C44DEA50090D179 /* RecyklooUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10547C872C44DEA40090D179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10547C962C44DEA50090D179 /* Preview Assets.xcassets in Resources */,
+				10547C932C44DEA50090D179 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10547C992C44DEA50090D179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10547CA32C44DEA50090D179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10547C852C44DEA40090D179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */,
+				10547C912C44DEA40090D179 /* Item.swift in Sources */,
+				10547C8D2C44DEA40090D179 /* RecyklooApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10547C972C44DEA50090D179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10547CA02C44DEA50090D179 /* RecyklooTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10547CA12C44DEA50090D179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10547CAC2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift in Sources */,
+				10547CAA2C44DEA50090D179 /* RecyklooUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10547C9D2C44DEA50090D179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10547C882C44DEA40090D179 /* Recykloo */;
+			targetProxy = 10547C9C2C44DEA50090D179 /* PBXContainerItemProxy */;
+		};
+		10547CA72C44DEA50090D179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10547C882C44DEA40090D179 /* Recykloo */;
+			targetProxy = 10547CA62C44DEA50090D179 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10547CAD2C44DEA50090D179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10547CAE2C44DEA50090D179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10547CB02C44DEA50090D179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Recykloo/Preview Content\"";
+				DEVELOPMENT_TEAM = 44ML4QK57Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADA.Recykloo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10547CB12C44DEA50090D179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Recykloo/Preview Content\"";
+				DEVELOPMENT_TEAM = 44ML4QK57Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADA.Recykloo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10547CB32C44DEA50090D179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44ML4QK57Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADA.RecyklooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recykloo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Recykloo";
+			};
+			name = Debug;
+		};
+		10547CB42C44DEA50090D179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44ML4QK57Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADA.RecyklooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recykloo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Recykloo";
+			};
+			name = Release;
+		};
+		10547CB62C44DEA50090D179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44ML4QK57Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADA.RecyklooUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Recykloo;
+			};
+			name = Debug;
+		};
+		10547CB72C44DEA50090D179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44ML4QK57Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADA.RecyklooUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Recykloo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10547C842C44DEA40090D179 /* Build configuration list for PBXProject "Recykloo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10547CAD2C44DEA50090D179 /* Debug */,
+				10547CAE2C44DEA50090D179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10547CAF2C44DEA50090D179 /* Build configuration list for PBXNativeTarget "Recykloo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10547CB02C44DEA50090D179 /* Debug */,
+				10547CB12C44DEA50090D179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10547CB22C44DEA50090D179 /* Build configuration list for PBXNativeTarget "RecyklooTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10547CB32C44DEA50090D179 /* Debug */,
+				10547CB42C44DEA50090D179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10547CB52C44DEA50090D179 /* Build configuration list for PBXNativeTarget "RecyklooUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10547CB62C44DEA50090D179 /* Debug */,
+				10547CB72C44DEA50090D179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10547C812C44DEA40090D179 /* Project object */;
+}
