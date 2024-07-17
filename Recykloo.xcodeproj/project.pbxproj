@@ -15,6 +15,8 @@
 		10547CA02C44DEA50090D179 /* RecyklooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C9F2C44DEA50090D179 /* RecyklooTests.swift */; };
 		10547CAA2C44DEA50090D179 /* RecyklooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CA92C44DEA50090D179 /* RecyklooUITests.swift */; };
 		10547CAC2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */; };
+		10547CB92C4757480090D179 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CB82C4757480090D179 /* MapView.swift */; };
+		10547CBB2C4768BB0090D179 /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CBA2C4768BB0090D179 /* LocationDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		10547CA52C44DEA50090D179 /* RecyklooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyklooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10547CA92C44DEA50090D179 /* RecyklooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITests.swift; sourceTree = "<group>"; };
 		10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10547CB82C4757480090D179 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		10547CBA2C4768BB0090D179 /* LocationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			children = (
 				10547C8C2C44DEA40090D179 /* RecyklooApp.swift */,
 				10547C8E2C44DEA40090D179 /* ContentView.swift */,
+				10547CB82C4757480090D179 /* MapView.swift */,
+				10547CBA2C4768BB0090D179 /* LocationDetailsView.swift */,
 				10547C902C44DEA40090D179 /* Item.swift */,
 				10547C922C44DEA50090D179 /* Assets.xcassets */,
 				10547C942C44DEA50090D179 /* Preview Content */,
@@ -260,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10547CBB2C4768BB0090D179 /* LocationDetailsView.swift in Sources */,
 				10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */,
+				10547CB92C4757480090D179 /* MapView.swift in Sources */,
 				10547C912C44DEA40090D179 /* Item.swift in Sources */,
 				10547C8D2C44DEA40090D179 /* RecyklooApp.swift in Sources */,
 			);
@@ -429,6 +437,7 @@
 				DEVELOPMENT_TEAM = 44ML4QK57Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to set pick-up location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +467,7 @@
 				DEVELOPMENT_TEAM = 44ML4QK57Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to set pick-up location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
