@@ -25,7 +25,7 @@ struct RecyklooApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MapView()
+            ContentView()
         }
         .modelContainer(sharedModelContainer)
     }
