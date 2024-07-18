@@ -10,9 +10,6 @@
 		10547C8D2C44DEA40090D179 /* RecyklooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C8C2C44DEA40090D179 /* RecyklooApp.swift */; };
 		10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C8E2C44DEA40090D179 /* ContentView.swift */; };
 		10547C962C44DEA50090D179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C952C44DEA50090D179 /* Preview Assets.xcassets */; };
-		10547CA02C44DEA50090D179 /* RecyklooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C9F2C44DEA50090D179 /* RecyklooTests.swift */; };
-		10547CAA2C44DEA50090D179 /* RecyklooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CA92C44DEA50090D179 /* RecyklooUITests.swift */; };
-		10547CAC2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */; };
 		227FD57A2C475E31006664E2 /* WasteCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FD5792C475E31006664E2 /* WasteCategoryView.swift */; };
 		438DEFA02C48FB72008F6CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C922C44DEA50090D179 /* Assets.xcassets */; };
 		438DEFA22C490423008F6CA2 /* PickupFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DEFA12C490423008F6CA2 /* PickupFormView.swift */; };
@@ -26,37 +23,15 @@
 		43ADDB592C48B436003D7E9A /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDB582C48B436003D7E9A /* LocationPickerView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		10547C9C2C44DEA50090D179 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 10547C812C44DEA40090D179 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 10547C882C44DEA40090D179;
-			remoteInfo = Recykloo;
-		};
-		10547CA62C44DEA50090D179 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 10547C812C44DEA40090D179 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 10547C882C44DEA40090D179;
-			remoteInfo = Recykloo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		10547C892C44DEA40090D179 /* Recykloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recykloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10547C8C2C44DEA40090D179 /* RecyklooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooApp.swift; sourceTree = "<group>"; };
 		10547C8E2C44DEA40090D179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		10547C922C44DEA50090D179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10547C952C44DEA50090D179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		10547C9B2C44DEA50090D179 /* RecyklooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyklooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		10547C9F2C44DEA50090D179 /* RecyklooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooTests.swift; sourceTree = "<group>"; };
-		10547CA52C44DEA50090D179 /* RecyklooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyklooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		10547CA92C44DEA50090D179 /* RecyklooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITests.swift; sourceTree = "<group>"; };
-		10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		227FD5792C475E31006664E2 /* WasteCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteCategoryView.swift; sourceTree = "<group>"; };
+		4324772F2C4919310011A36A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		438DEFA12C490423008F6CA2 /* PickupFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFormView.swift; sourceTree = "<group>"; };
-		4393ED0A2C481A2100D140EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4393ED0B2C48244100D140EE /* WasteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteType.swift; sourceTree = "<group>"; };
 		4393ED0D2C48246500D140EE /* Waste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waste.swift; sourceTree = "<group>"; };
 		4393ED0F2C48248A00D140EE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -75,20 +50,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		10547C982C44DEA50090D179 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		10547CA22C44DEA50090D179 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,8 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				10547C8B2C44DEA40090D179 /* Recykloo */,
-				10547C9E2C44DEA50090D179 /* RecyklooTests */,
-				10547CA82C44DEA50090D179 /* RecyklooUITests */,
 				10547C8A2C44DEA40090D179 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,8 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				10547C892C44DEA40090D179 /* Recykloo.app */,
-				10547C9B2C44DEA50090D179 /* RecyklooTests.xctest */,
-				10547CA52C44DEA50090D179 /* RecyklooUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,10 +72,10 @@
 		10547C8B2C44DEA40090D179 /* Recykloo */ = {
 			isa = PBXGroup;
 			children = (
+				4324772F2C4919310011A36A /* Info.plist */,
 				43ADDB552C48B31A003D7E9A /* ViewModels */,
 				43ADDB542C48B30F003D7E9A /* Views */,
 				430E4E962C48AB6400C5C646 /* Models */,
-				4393ED0A2C481A2100D140EE /* Info.plist */,
 				10547C8E2C44DEA40090D179 /* ContentView.swift */,
 				10547C8C2C44DEA40090D179 /* RecyklooApp.swift */,
 				10547C922C44DEA50090D179 /* Assets.xcassets */,
@@ -133,23 +90,6 @@
 				10547C952C44DEA50090D179 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		10547C9E2C44DEA50090D179 /* RecyklooTests */ = {
-			isa = PBXGroup;
-			children = (
-				10547C9F2C44DEA50090D179 /* RecyklooTests.swift */,
-			);
-			path = RecyklooTests;
-			sourceTree = "<group>";
-		};
-		10547CA82C44DEA50090D179 /* RecyklooUITests */ = {
-			isa = PBXGroup;
-			children = (
-				10547CA92C44DEA50090D179 /* RecyklooUITests.swift */,
-				10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */,
-			);
-			path = RecyklooUITests;
 			sourceTree = "<group>";
 		};
 		430E4E962C48AB6400C5C646 /* Models */ = {
@@ -203,42 +143,6 @@
 			productReference = 10547C892C44DEA40090D179 /* Recykloo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		10547C9A2C44DEA50090D179 /* RecyklooTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 10547CB22C44DEA50090D179 /* Build configuration list for PBXNativeTarget "RecyklooTests" */;
-			buildPhases = (
-				10547C972C44DEA50090D179 /* Sources */,
-				10547C982C44DEA50090D179 /* Frameworks */,
-				10547C992C44DEA50090D179 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				10547C9D2C44DEA50090D179 /* PBXTargetDependency */,
-			);
-			name = RecyklooTests;
-			productName = RecyklooTests;
-			productReference = 10547C9B2C44DEA50090D179 /* RecyklooTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		10547CA42C44DEA50090D179 /* RecyklooUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 10547CB52C44DEA50090D179 /* Build configuration list for PBXNativeTarget "RecyklooUITests" */;
-			buildPhases = (
-				10547CA12C44DEA50090D179 /* Sources */,
-				10547CA22C44DEA50090D179 /* Frameworks */,
-				10547CA32C44DEA50090D179 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				10547CA72C44DEA50090D179 /* PBXTargetDependency */,
-			);
-			name = RecyklooUITests;
-			productName = RecyklooUITests;
-			productReference = 10547CA52C44DEA50090D179 /* RecyklooUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,14 +155,6 @@
 				TargetAttributes = {
 					10547C882C44DEA40090D179 = {
 						CreatedOnToolsVersion = 15.2;
-					};
-					10547C9A2C44DEA50090D179 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 10547C882C44DEA40090D179;
-					};
-					10547CA42C44DEA50090D179 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 10547C882C44DEA40090D179;
 					};
 				};
 			};
@@ -276,8 +172,6 @@
 			projectRoot = "";
 			targets = (
 				10547C882C44DEA40090D179 /* Recykloo */,
-				10547C9A2C44DEA50090D179 /* RecyklooTests */,
-				10547CA42C44DEA50090D179 /* RecyklooUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,20 +183,6 @@
 			files = (
 				438DEFA02C48FB72008F6CA2 /* Assets.xcassets in Resources */,
 				10547C962C44DEA50090D179 /* Preview Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		10547C992C44DEA50090D179 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		10547CA32C44DEA50090D179 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,37 +208,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		10547C972C44DEA50090D179 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				10547CA02C44DEA50090D179 /* RecyklooTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		10547CA12C44DEA50090D179 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				10547CAC2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift in Sources */,
-				10547CAA2C44DEA50090D179 /* RecyklooUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		10547C9D2C44DEA50090D179 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 10547C882C44DEA40090D179 /* Recykloo */;
-			targetProxy = 10547C9C2C44DEA50090D179 /* PBXContainerItemProxy */;
-		};
-		10547CA72C44DEA50090D179 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 10547C882C44DEA40090D179 /* Recykloo */;
-			targetProxy = 10547CA62C44DEA50090D179 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		10547CAD2C44DEA50090D179 /* Debug */ = {
@@ -540,84 +390,6 @@
 			};
 			name = Release;
 		};
-		10547CB32C44DEA50090D179 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D549JV5ACX;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.RecyklooTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recykloo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Recykloo";
-			};
-			name = Debug;
-		};
-		10547CB42C44DEA50090D179 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D549JV5ACX;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.RecyklooTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recykloo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Recykloo";
-			};
-			name = Release;
-		};
-		10547CB62C44DEA50090D179 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D549JV5ACX;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RecyklooUITests/Info.plist;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.RecyklooUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Recykloo;
-			};
-			name = Debug;
-		};
-		10547CB72C44DEA50090D179 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D549JV5ACX;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RecyklooUITests/Info.plist;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.RecyklooUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Recykloo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -635,24 +407,6 @@
 			buildConfigurations = (
 				10547CB02C44DEA50090D179 /* Debug */,
 				10547CB12C44DEA50090D179 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		10547CB22C44DEA50090D179 /* Build configuration list for PBXNativeTarget "RecyklooTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				10547CB32C44DEA50090D179 /* Debug */,
-				10547CB42C44DEA50090D179 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		10547CB52C44DEA50090D179 /* Build configuration list for PBXNativeTarget "RecyklooUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				10547CB62C44DEA50090D179 /* Debug */,
-				10547CB72C44DEA50090D179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

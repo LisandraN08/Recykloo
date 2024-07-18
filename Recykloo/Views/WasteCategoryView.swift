@@ -10,11 +10,11 @@ import SwiftUI
 struct WasteCategoryView: View {
     @State private var searchText: String = ""
     @State private var navigateToPickupFormView = false
-
+    
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
-
+                
                 ScrollView(.horizontal) {
                     HStack(spacing: 8) {
                         CategoryButton(wasteCategory: "All")
@@ -26,7 +26,7 @@ struct WasteCategoryView: View {
                     }
                 }
                 .padding(.horizontal, 16)
-
+                
                 ZStack(alignment: .bottom) {
                     ScrollView(.vertical) {
                         VStack(spacing: 0) {
@@ -85,13 +85,17 @@ struct WasteCategoryView: View {
                 }
             }
         }
-        .searchable(text: $searchText)
+        //        .searchable(text: $searchText)
+        .searchable(
+            text: .constant(searchText),
+            placement: .navigationBarDrawer(displayMode: .always)
+        )
     }
 }
 
 struct CategoryButton: View {
     var wasteCategory: String = ""
-
+    
     var body: some View {
         Button(action: {
             // Code
@@ -110,7 +114,7 @@ struct CategoryButton: View {
 struct WasteCard: View {
     @State private var digitData = 0.0
     @State var showSheet: Bool = false
-
+    
     var body: some View {
         Rectangle()
             .fill(.white)
@@ -170,7 +174,7 @@ struct WasteCard: View {
 struct WasteDetailView: View {
     @Environment(\.dismiss) var dismiss
     @State private var digitData = 0.0
-
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -195,7 +199,7 @@ struct WasteDetailView: View {
                             .padding(.vertical, 10)
                             .background(.tertiary)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
-
+                            
                             VStack {
                                 RoundedRectangle(cornerRadius: 12)
                                     .fill(.white)
@@ -210,7 +214,7 @@ struct WasteDetailView: View {
                             .padding(.vertical, 10)
                             .background(.tertiary)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
-
+                            
                             VStack {
                                 RoundedRectangle(cornerRadius: 12)
                                     .fill(.white)
@@ -228,18 +232,18 @@ struct WasteDetailView: View {
                         }
                     }
                     .padding(.bottom, 23)
-
+                    
                     Text("Siapkan sampahmu")
                         .font(.system(size: 16, weight: .medium))
                     Text("Bantu kami dengan mengemas produk dengan bersih")
                         .font(.system(size: 14, weight: .regular))
-
+                    
                     Image("prep")
                     Rectangle()
                         .frame(height: 1)
                         .opacity(0.2)
                         .padding(.bottom, 17)
-
+                    
                     HStack {
                         Text("Estimasi berat")
                             .font(.system(size: 16, weight: .medium))
@@ -247,7 +251,7 @@ struct WasteDetailView: View {
                         Stepper(digitData: $digitData)
                     }
                     .padding(.bottom, 16)
-
+                    
                     Button(action: {
                         // Code
                     }) {
@@ -259,8 +263,8 @@ struct WasteDetailView: View {
                             .background(Color("Ijo"))
                             .cornerRadius(8)
                     }
-
-
+                    
+                    
                 }
                 .padding(16)
             }
@@ -272,7 +276,7 @@ struct WasteDetailView: View {
                         Spacer()
                     }
                 }
-
+                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         dismiss()
@@ -290,7 +294,7 @@ struct WasteDetailView: View {
 
 struct Stepper: View {
     @Binding var digitData: Float64
-
+    
     var body: some View {
         HStack(spacing: 15) {
             Button {
