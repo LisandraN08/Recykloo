@@ -12,7 +12,6 @@ struct PickupFormView: View {
     @State private var showingLocationPicker = false
     
     var body: some View {
-        NavigationView {
             VStack {
                 Form {
                     Section(header: Text("SUMMARY")) {
@@ -78,10 +77,6 @@ struct PickupFormView: View {
                 }
             }
             .navigationTitle("Schedule Pickup")
-            .navigationBarItems(leading: Button("Cancel") {
-                // Action for Cancel button
-            })
-        }
     }
 }
 

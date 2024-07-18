@@ -14,14 +14,6 @@ struct WasteCategoryView: View {
     var body: some View {
         NavigationView {
             VStack {
-//                HStack {
-//                    TextField("Search", text: $searchText)
-//                        .padding(8)
-//                        .background(Color(.systemGray6))
-//                        .cornerRadius(8)
-//                        .padding(.horizontal)
-//                }
-//                .padding(.top)
 
                 ScrollView(.horizontal) {
                     HStack(spacing: 8) {
