@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		10547C8D2C44DEA40090D179 /* RecyklooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C8C2C44DEA40090D179 /* RecyklooApp.swift */; };
-		10547C912C44DEA40090D179 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C902C44DEA40090D179 /* Item.swift */; };
 		10547C932C44DEA50090D179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C922C44DEA50090D179 /* Assets.xcassets */; };
 		10547C962C44DEA50090D179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C952C44DEA50090D179 /* Preview Assets.xcassets */; };
 		10547CA02C44DEA50090D179 /* RecyklooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C9F2C44DEA50090D179 /* RecyklooTests.swift */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		10547C892C44DEA40090D179 /* Recykloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recykloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10547C8C2C44DEA40090D179 /* RecyklooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooApp.swift; sourceTree = "<group>"; };
-		10547C902C44DEA40090D179 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		10547C922C44DEA50090D179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10547C952C44DEA50090D179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		10547C9B2C44DEA50090D179 /* RecyklooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyklooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,11 +94,8 @@
 		10547C8B2C44DEA40090D179 /* Recykloo */ = {
 			isa = PBXGroup;
 			children = (
-				227FD57B2C484365006664E2 /* Model */,
 				227FD57F2C48BB85006664E2 /* View */,
-				227FD57E2C48BAA3006664E2 /* New Group */,
 				10547C8C2C44DEA40090D179 /* RecyklooApp.swift */,
-				10547C902C44DEA40090D179 /* Item.swift */,
 				10547C922C44DEA50090D179 /* Assets.xcassets */,
 				10547C942C44DEA50090D179 /* Preview Content */,
 			);
@@ -130,20 +125,6 @@
 				10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */,
 			);
 			path = RecyklooUITests;
-			sourceTree = "<group>";
-		};
-		227FD57B2C484365006664E2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		227FD57E2C48BAA3006664E2 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		227FD57F2C48BB85006664E2 /* View */ = {
@@ -285,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				227FD57A2C475E31006664E2 /* WasteCategoryView.swift in Sources */,
-				10547C912C44DEA40090D179 /* Item.swift in Sources */,
 				10547C8D2C44DEA40090D179 /* RecyklooApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
