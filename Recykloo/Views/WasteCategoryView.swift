@@ -9,93 +9,88 @@ import SwiftUI
 
 struct WasteCategoryView: View {
     @State private var searchText: String = ""
-    
+    @State private var navigateToPickupFormView = false
+
     var body: some View {
-        VStack {
-            // Add the search bar at the top
-            HStack {
-                TextField("Search", text: $searchText)
-                    .padding(8)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(8)
-                    .padding(.horizontal)
-            }
-            .padding(.top)
-            
-            ScrollView(.horizontal) {
-                HStack(spacing: 8) {
-                    CategoryButton(wasteCategory: "All")
-                    CategoryButton(wasteCategory: "Plastik")
-                    CategoryButton(wasteCategory: "Kertas")
-                    CategoryButton(wasteCategory: "Logam")
-                    CategoryButton(wasteCategory: "Kaleng")
-                    CategoryButton(wasteCategory: "Kain")
-                }
-            }
-            .padding(.horizontal, 16)
-            
-            ZStack(alignment: .bottom) {
-                ScrollView(.vertical) {
-                    
-                    //                Text("All")
-                    //                    .font(.system(size: 24, weight: .semibold))
-                    //                    .padding(.leading)
-                    //                    .padding(.bottom, 10)
-                    //                    .padding(.top, 20)
-                    
-                    VStack(spacing: 0) {
-                        WasteCard()
-                        WasteCard()
-                        WasteCard()
-                        WasteCard()
-                        WasteCard()
+        NavigationView {
+            VStack {
+//                HStack {
+//                    TextField("Search", text: $searchText)
+//                        .padding(8)
+//                        .background(Color(.systemGray6))
+//                        .cornerRadius(8)
+//                        .padding(.horizontal)
+//                }
+//                .padding(.top)
+
+                ScrollView(.horizontal) {
+                    HStack(spacing: 8) {
+                        CategoryButton(wasteCategory: "All")
+                        CategoryButton(wasteCategory: "Plastik")
+                        CategoryButton(wasteCategory: "Kertas")
+                        CategoryButton(wasteCategory: "Logam")
+                        CategoryButton(wasteCategory: "Kaleng")
+                        CategoryButton(wasteCategory: "Kain")
                     }
-                    
-                    Spacer()
                 }
-                .padding(.bottom, 1)
-                Rectangle()
-                    .fill(.white)
-                    .frame(height: 70)
-                    .overlay {
-                        HStack {
-                            Button(action: {
-                                // Code
-                            }) {
-                                HStack {
-                                    Image(systemName: "list.dash") // Use your image name here
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 15, height: 15) // Adjust the size as needed
-                                    Text("Added items")
-                                        .font(.system(size: 16, weight: .semibold))
-                                }
-                                .buttonStyle(.bordered)
-                                .controlSize(/*@START_MENU_TOKEN@*/.regular/*@END_MENU_TOKEN@*/)
-                                .padding(.horizontal, 26)
-                                .padding(.vertical, 12)
-                                .foregroundColor(.black)
-                                .background(
-                                    RoundedRectangle(
-                                        cornerRadius: 8,
-                                        style: .continuous)
-                                    .stroke(.black.opacity(0.2), lineWidth: 1)
-                                )
-                            }
-                            Button(action: {
-                                // Code
-                            }) {
-                                Text("Continue")
-                                    .font(.system(size: 16, weight: .semibold))
-                                    .padding(.horizontal, 51)
+                .padding(.horizontal, 16)
+
+                ZStack(alignment: .bottom) {
+                    ScrollView(.vertical) {
+                        VStack(spacing: 0) {
+                            WasteCard()
+                            WasteCard()
+                            WasteCard()
+                            WasteCard()
+                            WasteCard()
+                        }
+                        Spacer()
+                    }
+                    .padding(.bottom, 1)
+                    Rectangle()
+                        .fill(.white)
+                        .frame(height: 70)
+                        .overlay {
+                            HStack {
+                                Button(action: {
+                                    // Code
+                                }) {
+                                    HStack {
+                                        Image(systemName: "list.dash")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 15, height: 15)
+                                        Text("Added items")
+                                            .font(.system(size: 16, weight: .semibold))
+                                    }
+                                    .buttonStyle(.bordered)
+                                    .controlSize(.regular)
+                                    .padding(.horizontal, 26)
                                     .padding(.vertical, 12)
-                                    .foregroundColor(.white)
-                                    .background(Color("Ijo"))
-                                    .cornerRadius(8)
+                                    .foregroundColor(.black)
+                                    .background(
+                                        RoundedRectangle(
+                                            cornerRadius: 8,
+                                            style: .continuous)
+                                        .stroke(.black.opacity(0.2), lineWidth: 1)
+                                    )
+                                }
+                                NavigationLink(destination: PickupFormView(), isActive: $navigateToPickupFormView) {
+                                    Button(action: {
+                                        navigateToPickupFormView = true
+                                    }) {
+                                        Text("Continue")
+                                            .font(.system(size: 16, weight: .semibold))
+                                            .padding(.horizontal, 51)
+                                            .padding(.vertical, 12)
+                                            .foregroundColor(.white)
+                                            .background(Color("Ijo"))
+                                            .cornerRadius(8)
+                                    }
+                                }
                             }
                         }
-                    }
-                
+                }
             }
         }
         .searchable(text: $searchText)
@@ -104,7 +99,7 @@ struct WasteCategoryView: View {
 
 struct CategoryButton: View {
     var wasteCategory: String = ""
-    
+
     var body: some View {
         Button(action: {
             // Code
@@ -123,7 +118,7 @@ struct CategoryButton: View {
 struct WasteCard: View {
     @State private var digitData = 0.0
     @State var showSheet: Bool = false
-    
+
     var body: some View {
         Rectangle()
             .fill(.white)
@@ -183,7 +178,7 @@ struct WasteCard: View {
 struct WasteDetailView: View {
     @Environment(\.dismiss) var dismiss
     @State private var digitData = 0.0
-    
+
     var body: some View {
         NavigationView {
             VStack {
@@ -208,7 +203,7 @@ struct WasteDetailView: View {
                             .padding(.vertical, 10)
                             .background(.tertiary)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
-                            
+
                             VStack {
                                 RoundedRectangle(cornerRadius: 12)
                                     .fill(.white)
@@ -223,7 +218,7 @@ struct WasteDetailView: View {
                             .padding(.vertical, 10)
                             .background(.tertiary)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
-                            
+
                             VStack {
                                 RoundedRectangle(cornerRadius: 12)
                                     .fill(.white)
@@ -241,18 +236,18 @@ struct WasteDetailView: View {
                         }
                     }
                     .padding(.bottom, 23)
-                    
+
                     Text("Siapkan sampahmu")
                         .font(.system(size: 16, weight: .medium))
                     Text("Bantu kami dengan mengemas produk dengan bersih")
                         .font(.system(size: 14, weight: .regular))
-                    
+
                     Image("prep")
                     Rectangle()
                         .frame(height: 1)
                         .opacity(0.2)
                         .padding(.bottom, 17)
-                    
+
                     HStack {
                         Text("Estimasi berat")
                             .font(.system(size: 16, weight: .medium))
@@ -260,7 +255,7 @@ struct WasteDetailView: View {
                         Stepper(digitData: $digitData)
                     }
                     .padding(.bottom, 16)
-                    
+
                     Button(action: {
                         // Code
                     }) {
@@ -272,8 +267,8 @@ struct WasteDetailView: View {
                             .background(Color("Ijo"))
                             .cornerRadius(8)
                     }
-                    
-                    
+
+
                 }
                 .padding(16)
             }
@@ -285,7 +280,7 @@ struct WasteDetailView: View {
                         Spacer()
                     }
                 }
-                
+
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         dismiss()
@@ -303,7 +298,7 @@ struct WasteDetailView: View {
 
 struct Stepper: View {
     @Binding var digitData: Float64
-    
+
     var body: some View {
         HStack(spacing: 15) {
             Button {

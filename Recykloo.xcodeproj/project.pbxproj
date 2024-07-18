@@ -15,6 +15,7 @@
 		10547CAC2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */; };
 		227FD57A2C475E31006664E2 /* WasteCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FD5792C475E31006664E2 /* WasteCategoryView.swift */; };
 		438DEFA02C48FB72008F6CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C922C44DEA50090D179 /* Assets.xcassets */; };
+		438DEFA22C490423008F6CA2 /* PickupFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DEFA12C490423008F6CA2 /* PickupFormView.swift */; };
 		4393ED0C2C48244100D140EE /* WasteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED0B2C48244100D140EE /* WasteType.swift */; };
 		4393ED0E2C48246500D140EE /* Waste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED0D2C48246500D140EE /* Waste.swift */; };
 		4393ED102C48248A00D140EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED0F2C48248A00D140EE /* User.swift */; };
@@ -54,6 +55,7 @@
 		10547CA92C44DEA50090D179 /* RecyklooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITests.swift; sourceTree = "<group>"; };
 		10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		227FD5792C475E31006664E2 /* WasteCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteCategoryView.swift; sourceTree = "<group>"; };
+		438DEFA12C490423008F6CA2 /* PickupFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFormView.swift; sourceTree = "<group>"; };
 		4393ED0A2C481A2100D140EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4393ED0B2C48244100D140EE /* WasteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteType.swift; sourceTree = "<group>"; };
 		4393ED0D2C48246500D140EE /* Waste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waste.swift; sourceTree = "<group>"; };
@@ -118,7 +120,6 @@
 				430E4E962C48AB6400C5C646 /* Models */,
 				4393ED0A2C481A2100D140EE /* Info.plist */,
 				10547C8E2C44DEA40090D179 /* ContentView.swift */,
-				227FD57F2C48BB85006664E2 /* View */,
 				10547C8C2C44DEA40090D179 /* RecyklooApp.swift */,
 				10547C922C44DEA50090D179 /* Assets.xcassets */,
 				10547C942C44DEA50090D179 /* Preview Content */,
@@ -151,14 +152,6 @@
 			path = RecyklooUITests;
 			sourceTree = "<group>";
 		};
-		227FD57F2C48BB85006664E2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				227FD5792C475E31006664E2 /* WasteCategoryView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		430E4E962C48AB6400C5C646 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +168,9 @@
 		43ADDB542C48B30F003D7E9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				227FD5792C475E31006664E2 /* WasteCategoryView.swift */,
 				43ADDB582C48B436003D7E9A /* LocationPickerView.swift */,
+				438DEFA12C490423008F6CA2 /* PickupFormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,6 +319,7 @@
 				43ADDB572C48B336003D7E9A /* ScheduleViewModel.swift in Sources */,
 				4393ED0E2C48246500D140EE /* Waste.swift in Sources */,
 				4393ED102C48248A00D140EE /* User.swift in Sources */,
+				438DEFA22C490423008F6CA2 /* PickupFormView.swift in Sources */,
 				10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */,
 				4393ED162C4824D600D140EE /* Penjemputan.swift in Sources */,
 				227FD57A2C475E31006664E2 /* WasteCategoryView.swift in Sources */,
