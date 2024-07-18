@@ -6,56 +6,87 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    @StateObject private var viewModel = ScheduleViewModel()
+    @State private var showingLocationPicker = false
+    
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        NavigationView {
+            VStack {
+                Form {
+                    Section(header: Text("SUMMARY")) {
+                        List(viewModel.selectedWaste) { waste in
+                            HStack {
+                                Text(waste.wasteType.nama)
+                                    .font(.body)
+                                Spacer()
+                                Text("\(waste.berat) Kg")
+                                    .font(.body)
+                                    .foregroundColor(.green)
+                            }
+                        }
+                    }
+                    
+                    Section(header: Text("PICK UP TIME")) {
+                        DatePicker("Select Date", selection: $viewModel.selectedDate, displayedComponents: .date)
+                        Picker("Select Time Slot", selection: $viewModel.selectedTime) {
+                            Text("Select Time Slot").foregroundColor(.gray).tag("")
+                            ForEach(viewModel.timeSlots, id: \.self) {
+                                Text($0).tag($0)
+                            }
+                        }
+                    }
+                    
+                    Section(header: Text("PICK UP LOCATION")) {
+                        NavigationLink(destination: LocationPickerView(selectedLocation: $viewModel.location)) {
+                            HStack {
+                                Image(systemName: "mappin.circle.fill")
+                                    .foregroundColor(.green)
+                                    .font(.system(size: 40))
+                                    .padding(.trailing, 5)
+                                VStack(alignment: .leading) {
+                                    if viewModel.location.isEmpty {
+                                        Text("No location selected")
+                                            .font(.headline)
+                                            .foregroundColor(.gray)
+                                    } else {
+                                        Text(viewModel.location)
+                                            .font(.headline)
+                                        TextField("Notes", text: $viewModel.locationNotes)
+                                            .font(.subheadline)
+                                            .foregroundColor(.gray)
+                                    }
+                                }
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                        }
                     }
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                
+                Button(action: viewModel.createSchedule) {
+                    Text("Create Schedule")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                .padding()
+                .alert(isPresented: $viewModel.showingAlert) {
+                    Alert(title: Text("Error"), message: Text(viewModel.alertMessage), dismissButton: .default(Text("OK")))
                 }
             }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+            .navigationTitle("Schedule Pickup")
+            .navigationBarItems(leading: Button("Cancel") {
+                // Action for Cancel button
+            })
         }
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
