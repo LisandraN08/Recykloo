@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		10547C8D2C44DEA40090D179 /* RecyklooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C8C2C44DEA40090D179 /* RecyklooApp.swift */; };
 		10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C8E2C44DEA40090D179 /* ContentView.swift */; };
+		10547C932C44DEA50090D179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C922C44DEA50090D179 /* Assets.xcassets */; };
 		10547C962C44DEA50090D179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C952C44DEA50090D179 /* Preview Assets.xcassets */; };
 		10547CA02C44DEA50090D179 /* RecyklooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C9F2C44DEA50090D179 /* RecyklooTests.swift */; };
 		10547CAA2C44DEA50090D179 /* RecyklooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CA92C44DEA50090D179 /* RecyklooUITests.swift */; };
 		10547CAC2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */; };
-		4393ED082C48185E00D140EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4393ED072C48185E00D140EE /* Assets.xcassets */; };
 		4393ED0C2C48244100D140EE /* WasteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED0B2C48244100D140EE /* WasteType.swift */; };
 		4393ED0E2C48246500D140EE /* Waste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED0D2C48246500D140EE /* Waste.swift */; };
 		4393ED102C48248A00D140EE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED0F2C48248A00D140EE /* User.swift */; };
@@ -22,6 +22,7 @@
 		4393ED162C4824D600D140EE /* Penjemputan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED152C4824D600D140EE /* Penjemputan.swift */; };
 		43ADDB572C48B336003D7E9A /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDB562C48B336003D7E9A /* ScheduleViewModel.swift */; };
 		43ADDB592C48B436003D7E9A /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDB582C48B436003D7E9A /* LocationPickerView.swift */; };
+		227FD57A2C475E31006664E2 /* WasteCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FD5792C475E31006664E2 /* WasteCategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +46,13 @@
 		10547C892C44DEA40090D179 /* Recykloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recykloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10547C8C2C44DEA40090D179 /* RecyklooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooApp.swift; sourceTree = "<group>"; };
 		10547C8E2C44DEA40090D179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10547C922C44DEA50090D179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10547C952C44DEA50090D179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		10547C9B2C44DEA50090D179 /* RecyklooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyklooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10547C9F2C44DEA50090D179 /* RecyklooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooTests.swift; sourceTree = "<group>"; };
 		10547CA52C44DEA50090D179 /* RecyklooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyklooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10547CA92C44DEA50090D179 /* RecyklooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITests.swift; sourceTree = "<group>"; };
 		10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4393ED072C48185E00D140EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4393ED0A2C481A2100D140EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4393ED0B2C48244100D140EE /* WasteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteType.swift; sourceTree = "<group>"; };
 		4393ED0D2C48246500D140EE /* Waste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waste.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		4393ED152C4824D600D140EE /* Penjemputan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penjemputan.swift; sourceTree = "<group>"; };
 		43ADDB562C48B336003D7E9A /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		43ADDB582C48B436003D7E9A /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
+		227FD5792C475E31006664E2 /* WasteCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteCategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +117,10 @@
 				43ADDB542C48B30F003D7E9A /* Views */,
 				430E4E962C48AB6400C5C646 /* Models */,
 				4393ED0A2C481A2100D140EE /* Info.plist */,
-				10547C8C2C44DEA40090D179 /* RecyklooApp.swift */,
 				10547C8E2C44DEA40090D179 /* ContentView.swift */,
-				4393ED072C48185E00D140EE /* Assets.xcassets */,
+				227FD57F2C48BB85006664E2 /* View */,
+				10547C8C2C44DEA40090D179 /* RecyklooApp.swift */,
+				10547C922C44DEA50090D179 /* Assets.xcassets */,
 				10547C942C44DEA50090D179 /* Preview Content */,
 			);
 			path = Recykloo;
@@ -175,6 +178,14 @@
 				43ADDB562C48B336003D7E9A /* ScheduleViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		227FD57F2C48BB85006664E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				227FD5792C475E31006664E2 /* WasteCategoryView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +326,7 @@
 				4393ED102C48248A00D140EE /* User.swift in Sources */,
 				10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */,
 				4393ED162C4824D600D140EE /* Penjemputan.swift in Sources */,
+				227FD57A2C475E31006664E2 /* WasteCategoryView.swift in Sources */,
 				10547C8D2C44DEA40090D179 /* RecyklooApp.swift in Sources */,
 				43ADDB592C48B436003D7E9A /* LocationPickerView.swift in Sources */,
 			);
