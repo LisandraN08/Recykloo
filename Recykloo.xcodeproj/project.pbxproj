@@ -11,6 +11,11 @@
 		10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C8E2C44DEA40090D179 /* ContentView.swift */; };
 		10547C962C44DEA50090D179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C952C44DEA50090D179 /* Preview Assets.xcassets */; };
 		227FD57A2C475E31006664E2 /* WasteCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FD5792C475E31006664E2 /* WasteCategoryView.swift */; };
+		432477312C4989020011A36A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432477302C4989020011A36A /* MapView.swift */; };
+		43889BAB2C4BEC0B008DF4ED /* WasteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43889BAA2C4BEC0B008DF4ED /* WasteCard.swift */; };
+		43889BAF2C4BFB7A008DF4ED /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43889BAE2C4BFB7A008DF4ED /* CustomStepper.swift */; };
+		43889BB12C4C76F4008DF4ED /* WasteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43889BB02C4C76F4008DF4ED /* WasteDetail.swift */; };
+		43889BB32C4C833E008DF4ED /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43889BB22C4C833E008DF4ED /* MapViewModel.swift */; };
 		438DEFA02C48FB72008F6CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C922C44DEA50090D179 /* Assets.xcassets */; };
 		438DEFA22C490423008F6CA2 /* PickupFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DEFA12C490423008F6CA2 /* PickupFormView.swift */; };
 		4393ED0C2C48244100D140EE /* WasteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED0B2C48244100D140EE /* WasteType.swift */; };
@@ -19,7 +24,7 @@
 		4393ED122C48249E00D140EE /* Rombeng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED112C48249E00D140EE /* Rombeng.swift */; };
 		4393ED142C4824BE00D140EE /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED132C4824BE00D140EE /* Order.swift */; };
 		4393ED162C4824D600D140EE /* Penjemputan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED152C4824D600D140EE /* Penjemputan.swift */; };
-		43ADDB572C48B336003D7E9A /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDB562C48B336003D7E9A /* ScheduleViewModel.swift */; };
+		43ADDB572C48B336003D7E9A /* PickupFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDB562C48B336003D7E9A /* PickupFormViewModel.swift */; };
 		43ADDB592C48B436003D7E9A /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDB582C48B436003D7E9A /* LocationPickerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +36,11 @@
 		10547C952C44DEA50090D179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		227FD5792C475E31006664E2 /* WasteCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteCategoryView.swift; sourceTree = "<group>"; };
 		4324772F2C4919310011A36A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		432477302C4989020011A36A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		43889BAA2C4BEC0B008DF4ED /* WasteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteCard.swift; sourceTree = "<group>"; };
+		43889BAE2C4BFB7A008DF4ED /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
+		43889BB02C4C76F4008DF4ED /* WasteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteDetail.swift; sourceTree = "<group>"; };
+		43889BB22C4C833E008DF4ED /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		438DEFA12C490423008F6CA2 /* PickupFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFormView.swift; sourceTree = "<group>"; };
 		4393ED0B2C48244100D140EE /* WasteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteType.swift; sourceTree = "<group>"; };
 		4393ED0D2C48246500D140EE /* Waste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waste.swift; sourceTree = "<group>"; };
@@ -38,7 +48,7 @@
 		4393ED112C48249E00D140EE /* Rombeng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rombeng.swift; sourceTree = "<group>"; };
 		4393ED132C4824BE00D140EE /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		4393ED152C4824D600D140EE /* Penjemputan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penjemputan.swift; sourceTree = "<group>"; };
-		43ADDB562C48B336003D7E9A /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		43ADDB562C48B336003D7E9A /* PickupFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFormViewModel.swift; sourceTree = "<group>"; };
 		43ADDB582C48B436003D7E9A /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,12 +115,33 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		43ADDB542C48B30F003D7E9A /* Views */ = {
+		43889BAC2C4BEF44008DF4ED /* Pickup */ = {
 			isa = PBXGroup;
 			children = (
 				227FD5792C475E31006664E2 /* WasteCategoryView.swift */,
 				43ADDB582C48B436003D7E9A /* LocationPickerView.swift */,
 				438DEFA12C490423008F6CA2 /* PickupFormView.swift */,
+				432477302C4989020011A36A /* MapView.swift */,
+				43889BAA2C4BEC0B008DF4ED /* WasteCard.swift */,
+				43889BAE2C4BFB7A008DF4ED /* CustomStepper.swift */,
+				43889BB02C4C76F4008DF4ED /* WasteDetail.swift */,
+			);
+			path = Pickup;
+			sourceTree = "<group>";
+		};
+		43889BAD2C4BEF57008DF4ED /* Pickup */ = {
+			isa = PBXGroup;
+			children = (
+				43ADDB562C48B336003D7E9A /* PickupFormViewModel.swift */,
+				43889BB22C4C833E008DF4ED /* MapViewModel.swift */,
+			);
+			path = Pickup;
+			sourceTree = "<group>";
+		};
+		43ADDB542C48B30F003D7E9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43889BAC2C4BEF44008DF4ED /* Pickup */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,7 +149,7 @@
 		43ADDB552C48B31A003D7E9A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				43ADDB562C48B336003D7E9A /* ScheduleViewModel.swift */,
+				43889BAD2C4BEF57008DF4ED /* Pickup */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -194,17 +225,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				4393ED122C48249E00D140EE /* Rombeng.swift in Sources */,
+				43889BAB2C4BEC0B008DF4ED /* WasteCard.swift in Sources */,
 				4393ED0C2C48244100D140EE /* WasteType.swift in Sources */,
 				4393ED142C4824BE00D140EE /* Order.swift in Sources */,
-				43ADDB572C48B336003D7E9A /* ScheduleViewModel.swift in Sources */,
+				43ADDB572C48B336003D7E9A /* PickupFormViewModel.swift in Sources */,
+				432477312C4989020011A36A /* MapView.swift in Sources */,
+				43889BB12C4C76F4008DF4ED /* WasteDetail.swift in Sources */,
 				4393ED0E2C48246500D140EE /* Waste.swift in Sources */,
 				4393ED102C48248A00D140EE /* User.swift in Sources */,
 				438DEFA22C490423008F6CA2 /* PickupFormView.swift in Sources */,
 				10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */,
 				4393ED162C4824D600D140EE /* Penjemputan.swift in Sources */,
+				43889BAF2C4BFB7A008DF4ED /* CustomStepper.swift in Sources */,
 				227FD57A2C475E31006664E2 /* WasteCategoryView.swift in Sources */,
 				10547C8D2C44DEA40090D179 /* RecyklooApp.swift in Sources */,
 				43ADDB592C48B436003D7E9A /* LocationPickerView.swift in Sources */,
+				43889BB32C4C833E008DF4ED /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +378,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Recykloo/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to set pick-up location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -372,6 +409,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Recykloo/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to set pick-up location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

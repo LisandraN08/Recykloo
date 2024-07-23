@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var viewModel = ScheduleViewModel()
+    @StateObject private var viewModel = PickupFormViewModel()
     @State private var showingLocationPicker = false
     
     var body: some View {

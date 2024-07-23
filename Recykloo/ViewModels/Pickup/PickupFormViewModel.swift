@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class ScheduleViewModel: ObservableObject {
+class PickupFormViewModel: ObservableObject {
     @Published var selectedWaste: [Waste] = [
         Waste(wasteType: WasteType(nama: "Botol Plastik", gambar: "plastik.png", poinPerKilo: 10, category: "Plastik"), berat: 5),
         Waste(wasteType: WasteType(nama: "Meja Plastik", gambar: "kertas.png", poinPerKilo: 8, category: "Plastik"), berat: 3),
@@ -46,10 +46,10 @@ class ScheduleViewModel: ObservableObject {
             """
         }.joined(separator: "\n")
         
-        let rombeng = Rombeng(nama: "John Doe", wilayah: "Surabaya") // Dummy data, replace with real data
+        let rombeng = Rombeng(nama: "John Doe", wilayah: "Surabaya")
         
         let order = Order(
-            waste: selectedWaste[0],
+            wastes: selectedWaste,
             intervalJam: selectedTime,
             hari: formattedDate,
             lokasi: location,
@@ -65,13 +65,19 @@ class ScheduleViewModel: ObservableObject {
     func createSchedule() {
         guard let order = createOrder() else { return }
         
+        let wasteDetails = order.wastes.enumerated().map { (index, waste) -> String in
+            return """
+            \(index + 1). *Waste Type: \(waste.wasteType.nama)*
+            - Weight: \(waste.berat) kg
+            - Points per Kilo: \(waste.wasteType.poinPerKilo)
+            - Category: \(waste.wasteType.category)
+            """
+        }.joined(separator: "\n")
+        
         let message = """
         *New Schedule:*
         Waste list:
-        \(order.waste.wasteType.nama)
-        - Weight: \(order.waste.berat) kg
-        - Points per Kilo: \(order.waste.wasteType.poinPerKilo)
-        - Category: \(order.waste.wasteType.category)
+        \(wasteDetails)
         
         Details:
         - Date: \(order.hari)
@@ -97,3 +103,4 @@ class ScheduleViewModel: ObservableObject {
         }
     }
 }
+

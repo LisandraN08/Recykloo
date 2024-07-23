@@ -10,7 +10,7 @@ import Foundation
 struct Waste: Identifiable {
     let id: UUID
     let wasteType: WasteType
-    let berat: Int
+    var berat: Int
     
     init(id: UUID = UUID(), wasteType: WasteType, berat: Int) {
         self.id = id

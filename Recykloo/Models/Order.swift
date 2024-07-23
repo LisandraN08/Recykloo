@@ -9,7 +9,7 @@ import Foundation
 
 struct Order: Identifiable {
     let id: UUID
-    let waste: Waste
+    let wastes: [Waste]
     let intervalJam: String
     let hari: String
     let lokasi: String
@@ -18,9 +18,9 @@ struct Order: Identifiable {
     let rombeng: Rombeng
     let poin: Int
     
-    init(id: UUID = UUID(), waste: Waste, intervalJam: String, hari: String, lokasi: String, status: String, rombeng: Rombeng, poin: Int, keteranganLokasi: String) {
+    init(id: UUID = UUID(), wastes: [Waste], intervalJam: String, hari: String, lokasi: String, status: String, rombeng: Rombeng, poin: Int, keteranganLokasi: String) {
         self.id = id
-        self.waste = waste
+        self.wastes = wastes
         self.intervalJam = intervalJam
         self.hari = hari
         self.lokasi = lokasi
@@ -30,4 +30,3 @@ struct Order: Identifiable {
         self.keteranganLokasi = keteranganLokasi
     }
 }
-
