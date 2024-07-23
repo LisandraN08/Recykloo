@@ -11,7 +11,6 @@
 		10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C8E2C44DEA40090D179 /* ContentView.swift */; };
 		10547C962C44DEA50090D179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10547C952C44DEA50090D179 /* Preview Assets.xcassets */; };
 		227FD57A2C475E31006664E2 /* WasteCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FD5792C475E31006664E2 /* WasteCategoryView.swift */; };
-		432477312C4989020011A36A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432477302C4989020011A36A /* MapView.swift */; };
 		43889BAB2C4BEC0B008DF4ED /* WasteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43889BAA2C4BEC0B008DF4ED /* WasteCard.swift */; };
 		43889BAF2C4BFB7A008DF4ED /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43889BAE2C4BFB7A008DF4ED /* CustomStepper.swift */; };
 		43889BB12C4C76F4008DF4ED /* WasteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43889BB02C4C76F4008DF4ED /* WasteDetail.swift */; };
@@ -26,6 +25,11 @@
 		4393ED162C4824D600D140EE /* Penjemputan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393ED152C4824D600D140EE /* Penjemputan.swift */; };
 		43ADDB572C48B336003D7E9A /* PickupFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDB562C48B336003D7E9A /* PickupFormViewModel.swift */; };
 		43ADDB592C48B436003D7E9A /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDB582C48B436003D7E9A /* LocationPickerView.swift */; };
+		10547CA02C44DEA50090D179 /* RecyklooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547C9F2C44DEA50090D179 /* RecyklooTests.swift */; };
+		10547CAA2C44DEA50090D179 /* RecyklooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CA92C44DEA50090D179 /* RecyklooUITests.swift */; };
+		10547CAC2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */; };
+		10547CB92C4757480090D179 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CB82C4757480090D179 /* MapView.swift */; };
+		10547CBB2C4768BB0090D179 /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10547CBA2C4768BB0090D179 /* LocationDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +40,6 @@
 		10547C952C44DEA50090D179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		227FD5792C475E31006664E2 /* WasteCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteCategoryView.swift; sourceTree = "<group>"; };
 		4324772F2C4919310011A36A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		432477302C4989020011A36A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		43889BAA2C4BEC0B008DF4ED /* WasteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteCard.swift; sourceTree = "<group>"; };
 		43889BAE2C4BFB7A008DF4ED /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
 		43889BB02C4C76F4008DF4ED /* WasteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteDetail.swift; sourceTree = "<group>"; };
@@ -50,6 +53,13 @@
 		4393ED152C4824D600D140EE /* Penjemputan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penjemputan.swift; sourceTree = "<group>"; };
 		43ADDB562C48B336003D7E9A /* PickupFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupFormViewModel.swift; sourceTree = "<group>"; };
 		43ADDB582C48B436003D7E9A /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
+		10547C9B2C44DEA50090D179 /* RecyklooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyklooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10547C9F2C44DEA50090D179 /* RecyklooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooTests.swift; sourceTree = "<group>"; };
+		10547CA52C44DEA50090D179 /* RecyklooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyklooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10547CA92C44DEA50090D179 /* RecyklooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITests.swift; sourceTree = "<group>"; };
+		10547CAB2C44DEA50090D179 /* RecyklooUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyklooUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10547CB82C4757480090D179 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		10547CBA2C4768BB0090D179 /* LocationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,9 @@
 				430E4E962C48AB6400C5C646 /* Models */,
 				10547C8E2C44DEA40090D179 /* ContentView.swift */,
 				10547C8C2C44DEA40090D179 /* RecyklooApp.swift */,
+				10547CB82C4757480090D179 /* MapView.swift */,
+				10547CBA2C4768BB0090D179 /* LocationDetailsView.swift */,
+				10547C902C44DEA40090D179 /* Item.swift */,
 				10547C922C44DEA50090D179 /* Assets.xcassets */,
 				10547C942C44DEA50090D179 /* Preview Content */,
 			);
@@ -121,7 +134,6 @@
 				227FD5792C475E31006664E2 /* WasteCategoryView.swift */,
 				43ADDB582C48B436003D7E9A /* LocationPickerView.swift */,
 				438DEFA12C490423008F6CA2 /* PickupFormView.swift */,
-				432477302C4989020011A36A /* MapView.swift */,
 				43889BAA2C4BEC0B008DF4ED /* WasteCard.swift */,
 				43889BAE2C4BFB7A008DF4ED /* CustomStepper.swift */,
 				43889BB02C4C76F4008DF4ED /* WasteDetail.swift */,
@@ -229,7 +241,6 @@
 				4393ED0C2C48244100D140EE /* WasteType.swift in Sources */,
 				4393ED142C4824BE00D140EE /* Order.swift in Sources */,
 				43ADDB572C48B336003D7E9A /* PickupFormViewModel.swift in Sources */,
-				432477312C4989020011A36A /* MapView.swift in Sources */,
 				43889BB12C4C76F4008DF4ED /* WasteDetail.swift in Sources */,
 				4393ED0E2C48246500D140EE /* Waste.swift in Sources */,
 				4393ED102C48248A00D140EE /* User.swift in Sources */,
@@ -238,6 +249,10 @@
 				4393ED162C4824D600D140EE /* Penjemputan.swift in Sources */,
 				43889BAF2C4BFB7A008DF4ED /* CustomStepper.swift in Sources */,
 				227FD57A2C475E31006664E2 /* WasteCategoryView.swift in Sources */,
+				10547CBB2C4768BB0090D179 /* LocationDetailsView.swift in Sources */,
+				10547C8F2C44DEA40090D179 /* ContentView.swift in Sources */,
+				10547CB92C4757480090D179 /* MapView.swift in Sources */,
+				10547C912C44DEA40090D179 /* Item.swift in Sources */,
 				10547C8D2C44DEA40090D179 /* RecyklooApp.swift in Sources */,
 				43ADDB592C48B436003D7E9A /* LocationPickerView.swift in Sources */,
 				43889BB32C4C833E008DF4ED /* MapViewModel.swift in Sources */,
