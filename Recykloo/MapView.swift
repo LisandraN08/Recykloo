@@ -8,54 +8,111 @@
 import SwiftUI
 import MapKit
 
-// Wrapper struct for MKMapItem to conform to Identifiable
-struct IdentifiableMKMapItem: Identifiable {
-    var id = UUID()
-    var mapItem: MKMapItem
+struct MapItem: Identifiable, Hashable {
+    let id = UUID()
+    let mapItem: MKMapItem
+
+    static func == (lhs: MapItem, rhs: MapItem) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 struct MapView: View {
     @StateObject private var viewModel = MapViewModel()
     @State private var cameraPosition: MKCoordinateRegion = .userRegion
     @State private var searchText = ""
-    @State private var results = [IdentifiableMKMapItem]()
-    @State private var mapSelection: IdentifiableMKMapItem?
+    @State private var results = [MapItem]()
+    @State private var mapSelection: MapItem?
+    @State private var selectedMapItem: MapItem? = nil
+    @State private var showLocationDetails: Bool = false
 
     var body: some View {
-        VStack {
-            Map(coordinateRegion: $cameraPosition, showsUserLocation: true, annotationItems: results) { item in
-                MapAnnotation(coordinate: item.mapItem.placemark.coordinate) {
-                    VStack {
-                        Image(systemName: "mappin.circle.fill")
-                            .foregroundColor(.red)
-                        Text(item.mapItem.name ?? "")
-                            .font(.caption)
-                            .foregroundColor(.red)
+        NavigationView {
+            VStack {
+                HStack {
+                    Text("Set Pick-up Location")
+                        .font(.headline)
+                    Spacer()
+                    Button(action: {
+                        // Action for bell icon
+                    }) {
+                        Image(systemName: "bell")
+                            .foregroundColor(.black)
                     }
                 }
-            }
-            .onAppear {
-                viewModel.checkIfLocationServicesIsEnabled()
-            }
-            .overlay(alignment: .top) {
-                TextField("Search for a location", text: $searchText)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color.white)
-                    .cornerRadius(8)
-                    .padding()
-                    .shadow(radius: 10)
-            }
-            .onSubmit(of: .text) {
-                Task { await searchPlaces() }
-            }
-            .overlay(alignment: .bottom) {
-                HStack {
-                    MapCompass()
-                    Spacer()
-                    MapUserLocationButton()
-                }
                 .padding()
+
+                Map(coordinateRegion: $cameraPosition, showsUserLocation: true, annotationItems: results) { item in
+                    MapAnnotation(coordinate: item.mapItem.placemark.coordinate) {
+                        VStack {
+                            Image("iconCurrentLocation")
+                                .resizable()
+                                .frame(width:30, height: 30)
+                            Text(item.mapItem.name ?? "")
+                                .font(.caption)
+                                .foregroundColor(.green)
+                        }
+                        .onTapGesture {
+                            selectedMapItem = item
+                        }
+                    }
+                }
+                .onAppear {
+                    viewModel.checkIfLocationServicesIsEnabled()
+                }
+                .onChange(of: viewModel.userLocation) { newLocation in
+                    if let newLocation = newLocation {
+                        cameraPosition.center = newLocation
+                    }
+                }
+                .overlay(alignment: .bottom) {
+                    HStack {
+                        MapCompass()
+                        Spacer()
+                        MapUserLocationButton()
+                    }
+                    .padding()
+                }
+
+                VStack(alignment: .leading) {
+                    TextField("Search location", text: $searchText)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color.white)
+                        .cornerRadius(8)
+                        .padding()
+                        .shadow(radius: 10)
+                        .onSubmit(of: .text) {
+                            Task { await searchPlaces() }
+                        }
+
+                    List {
+                        ForEach(results) { item in
+                            HStack {
+                                Image("iconLocation")
+                                    .resizable()
+                                    .frame(width: 40, height: 40)
+                                    .padding(.trailing, 10)
+                                NavigationLink(destination: LocationDetailsView(item: item)) {
+                                    VStack(alignment: .leading) {
+                                        Text(item.mapItem.name ?? "")
+                                            .font(.body)
+                                        Text(item.mapItem.placemark.title ?? "")
+                                            .font(.caption)
+                                            .foregroundColor(.gray)
+                                    }
+                                }
+                            }
+                            .padding(.vertical, 8)
+                        }
+                    }
+                    .listStyle(PlainListStyle())
+                }
+                .frame(maxHeight: 400)
             }
         }
     }
@@ -67,7 +124,7 @@ struct MapView: View {
 
         do {
             let response = try await MKLocalSearch(request: request).start()
-            self.results = response.mapItems.map { IdentifiableMKMapItem(mapItem: $0) }
+            self.results = response.mapItems.map { MapItem(mapItem: $0) }
         } catch {
             print("Search failed: \(error.localizedDescription)")
             self.results = []
@@ -75,15 +132,17 @@ struct MapView: View {
     }
 }
 
-extension CLLocationCoordinate2D {
-    static var userLocation: CLLocationCoordinate2D {
-        return .init(latitude: -7.285507521676576, longitude: 112.6315874013664)
+extension CLLocationCoordinate2D: Equatable {
+    public static func == (lhs: CLLocationCoordinate2D, rhs: CLLocationCoordinate2D) -> Bool {
+        return lhs.latitude == rhs.latitude && lhs.longitude == rhs.longitude
     }
 }
 
+let userLocationCoordinate = CLLocationCoordinate2D(latitude: -7.285507521676576, longitude: 112.6315874013664)
+
 extension MKCoordinateRegion {
     static var userRegion: MKCoordinateRegion {
-        return .init(center: .userLocation, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        return .init(center: userLocationCoordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
     }
 }
 
@@ -94,18 +153,21 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
-    var locationManager: CLLocationManager?
+    @Published var userLocation: CLLocationCoordinate2D?
+
+    private var locationManager: CLLocationManager?
 
     func checkIfLocationServicesIsEnabled() {
         if CLLocationManager.locationServicesEnabled() {
             locationManager = CLLocationManager()
             locationManager!.delegate = self
+            locationManager!.startUpdatingLocation()
         } else {
             print("Show an alert letting them know this is off and to go turn it on.")
         }
     }
 
-    func checkLocationAuthorization() {
+    private func checkLocationAuthorization() {
         guard let locationManager = locationManager else { return }
 
         switch locationManager.authorizationStatus {
@@ -116,7 +178,7 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
         case .denied:
             print("You have denied this app location permission. Go into settings to change it.")
         case .authorizedAlways, .authorizedWhenInUse:
-            break
+            locationManager.startUpdatingLocation()
         @unknown default:
             break
         }
@@ -124,5 +186,12 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
 
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         checkLocationAuthorization()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        DispatchQueue.main.async {
+            self.userLocation = location.coordinate
+        }
     }
 }

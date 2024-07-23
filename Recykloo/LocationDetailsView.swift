@@ -9,12 +9,21 @@ import SwiftUI
 import MapKit
 
 struct LocationDetailsView: View {
-    @Binding var mapSelection: MKMapItem?
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let item: MapItem // Make sure `MapItem` is the correct type
 
-#Preview {
-    LocationDetailsView(mapSelection: .constant(nil))
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text(item.mapItem.name ?? "Unknown Name")
+                .font(.largeTitle)
+                .padding()
+
+            Text(item.mapItem.placemark.title ?? "Unknown Location")
+                .font(.title2)
+                .padding(.horizontal)
+
+            Spacer()
+        }
+        .navigationTitle(item.mapItem.name ?? "Details")
+        .padding()
+    }
 }
