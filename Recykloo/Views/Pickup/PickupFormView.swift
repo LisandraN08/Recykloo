@@ -41,7 +41,7 @@ struct PickupFormView: View {
                 }
                 
                 Section(header: Text("PICK UP LOCATION")) {
-                    NavigationLink(destination: MapView(selectedLocation: $selectedLocation)) {
+                    NavigationLink(destination: MapView()) {
                         HStack {
                             Image(systemName: "mappin.circle.fill")
                                 .foregroundColor(.green)

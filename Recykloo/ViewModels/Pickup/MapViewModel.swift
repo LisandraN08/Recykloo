@@ -9,17 +9,15 @@ import Foundation
 import CoreLocation
 
 final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
-    var locationManager: CLLocationManager?
+    @Published var userLocation: CLLocationCoordinate2D?
 
-    override init() {
-        super.init()
-        locationManager = CLLocationManager()
-        locationManager?.delegate = self
-    }
+    private var locationManager: CLLocationManager?
 
     func checkIfLocationServicesIsEnabled() {
         if CLLocationManager.locationServicesEnabled() {
-            checkLocationAuthorization()
+            locationManager = CLLocationManager()
+            locationManager!.delegate = self
+            locationManager!.startUpdatingLocation()
         } else {
             print("Show an alert letting them know this is off and to go turn it on.")
         }
@@ -44,5 +42,12 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
 
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         checkLocationAuthorization()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        DispatchQueue.main.async {
+            self.userLocation = location.coordinate
+        }
     }
 }
